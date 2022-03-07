@@ -5,6 +5,8 @@ Formik para el formulario -
 
 Yup para validaciones - 
 
-react-router
+react-router -
 
-Tailwind css
+Tailwind css -
+
+Full Responsive Design -
