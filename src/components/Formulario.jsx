@@ -20,7 +20,7 @@ const Formulario = ({ cliente, cargando }) => {
     telefono: Yup.number()
       .typeError("El numero es inválido")
       .integer()
-      .positive("Número no válido"),
+      .positive(" El número debe ser positivo"),
   });
 
   const handleSubmit = async (valores) => {
