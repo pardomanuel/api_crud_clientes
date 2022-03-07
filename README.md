@@ -6,3 +6,5 @@ Formik para el formulario -
 Yup para validaciones - 
 
 react-router
+
+Tailwind css
