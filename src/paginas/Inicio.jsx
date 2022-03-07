@@ -3,9 +3,11 @@ import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 
 import Cliente from "../components/Cliente";
+import Spinner from "../components/Spinner";
 
 const Inicio = () => {
   const [clientes, setClientes] = useState([]);
+  const [cargando, setCargando] = useState(true);
 
   useEffect(() => {
     const obtenerClientesAPI = async () => {
@@ -14,6 +16,7 @@ const Inicio = () => {
         const respuesta = await fetch(url);
         const resultado = await respuesta.json();
         setClientes(resultado);
+        setCargando(false);
       } catch (error) {
         console.log(error);
       }
@@ -41,7 +44,8 @@ const Inicio = () => {
       }
     }
   };
-  return (
+  return cargando ? (<Spinner />) : 
+  (
     <>
       {clientes.length > 0 ? (
         <div>
@@ -80,7 +84,6 @@ const Inicio = () => {
           </Link>
         </div>
       )}
-      
     </>
   );
 };
