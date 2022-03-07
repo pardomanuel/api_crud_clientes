@@ -1,12 +1,3 @@
 {
-  "clientes": [
-    {
-      "nombre": "Manuel ACTUALIZADO",
-      "empresa": "Prueba S.R.L",
-      "email": "pardomanuel94@gmail.com",
-      "telefono": "1169103618",
-      "notas": "Esto es una prueba actualizada",
-      "id": 1
-    }
-  ]
+  "clientes": []
 }
